@@ -12,14 +12,15 @@ for i in range(len(dane)):
 print(dane)
 suma = 0
 
-#for i in range(len(dane)):
-#    if WYBOR.index(dane[i][0]) == ODP.index(dane[i][1]):
-#        suma += 3+ODP.index(dane[i][1])
-#    elif WYBOR.index(dane[i][0]) == ODP.index(dane[i][1])-1 or WYBOR.index(dane[i][0]) == ODP.index(dane[i][1])+2:
-#        suma += 6+ODP.index(dane[i][1])
-#    elif WYBOR.index(dane[i][0]) == ODP.index(dane[i][1])+1 or WYBOR.index(dane[i][0]) == ODP.index(dane[i][1])-2:
-#        suma += ODP.index(dane[i][1])
-#print(suma)
+for i in range(len(dane)):
+    if WYBOR.index(dane[i][0]) == ODP.index(dane[i][1]):
+        suma += 3+ODP.index(dane[i][1])
+    elif WYBOR.index(dane[i][0]) == ODP.index(dane[i][1])-1 or WYBOR.index(dane[i][0]) == ODP.index(dane[i][1])+2:
+        suma += 6+ODP.index(dane[i][1])
+    elif WYBOR.index(dane[i][0]) == ODP.index(dane[i][1])+1 or WYBOR.index(dane[i][0]) == ODP.index(dane[i][1])-2:
+        suma += ODP.index(dane[i][1])
+print(suma)
+
 suma = 0
 for i in range(len(dane)):
     if dane[i][1] == "X":
